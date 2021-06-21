@@ -2,11 +2,13 @@ import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home/Home";
-// import Login from "./components/Login/Login/Login";
+import Login from "./components/Login/Login/Login";
 import { useState } from "react";
 import { createContext } from "react";
 import JobSeeker from "./components/JobSeeker/JobSeeker/JobSeeker";
 import Employer from "./components/Employer/Employer/Employer";
+import Payment from "./components/Employer/Payment/Payment";
+import EmployeeForm from "./components/Employer/EmployeeForm/EmployeeForm";
 
 export const UserContext = createContext();
 
@@ -23,9 +25,10 @@ function App() {
           <Route path="/home">
             <Home />
           </Route>
-          {/* <Route path="/login">
+
+          <Route path="/login">
             <Login />
-          </Route> */}
+          </Route>
 
           <Route path="/employer">
             <Employer />
@@ -33,6 +36,14 @@ function App() {
 
           <Route path="/jobSeeker">
             <JobSeeker />
+          </Route>
+
+          <Route path="/payment">
+            <Payment />
+          </Route>
+
+          <Route path="/employeeForm">
+            <EmployeeForm />
           </Route>
         </Switch>
       </Router>
