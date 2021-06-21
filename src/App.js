@@ -10,6 +10,7 @@ import Employer from "./components/Employer/Employer/Employer";
 import Payment from "./components/Employer/Payment/Payment";
 import EmployeeForm from "./components/Employer/EmployeeForm/EmployeeForm";
 import JobFeed from "./components/Pages/JobFeed/JobFeed/JobFeed";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 
@@ -43,9 +44,9 @@ function App() {
             <Payment />
           </Route>
 
-          <Route path="/employeeForm">
+          <PrivateRoute path="/employeeForm">
             <EmployeeForm />
-          </Route>
+          </PrivateRoute>
 
           <Route path="/jobFeed">
             <JobFeed />
