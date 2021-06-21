@@ -9,6 +9,7 @@ import JobSeeker from "./components/JobSeeker/JobSeeker/JobSeeker";
 import Employer from "./components/Employer/Employer/Employer";
 import Payment from "./components/Employer/Payment/Payment";
 import EmployeeForm from "./components/Employer/EmployeeForm/EmployeeForm";
+import JobFeed from "./components/Pages/JobFeed/JobFeed/JobFeed";
 
 export const UserContext = createContext();
 
@@ -44,6 +45,10 @@ function App() {
 
           <Route path="/employeeForm">
             <EmployeeForm />
+          </Route>
+
+          <Route path="/jobFeed">
+            <JobFeed />
           </Route>
         </Switch>
       </Router>

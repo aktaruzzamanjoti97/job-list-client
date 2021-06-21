@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { faAccessibleIcon } from "@fortawesome/free-brands-svg-icons";
 import { UserContext } from "../../../App";
+import './Sidebar.css';
 
 const Sidebar = () => {
 
@@ -39,51 +40,51 @@ const Sidebar = () => {
     >
       <ul className="list-unstyled">
         <li>
-          <Link className="text-brand text-decoration-none" to="/dashboard">
-            <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
+          <Link className="text-brand text-decoration-none" to="/myProfile">
+            <FontAwesomeIcon icon={faGripHorizontal} /> <span>My Profile</span>
           </Link>
         </li>
         <li>
-          <Link to="/home" className="text-brand text-decoration-none">
-            <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+          <Link to="/jobFeed" className="text-brand text-decoration-none">
+            <FontAwesomeIcon icon={faHome} /> <span>Job Feed</span>
           </Link>
         </li>
         <li>
-          <Link to="/bookingList" className="text-brand text-decoration-none">
+          <Link to="/createPost" className="text-brand text-decoration-none">
             <FontAwesomeIcon icon={faAccessibleIcon} />{" "}
-            <span>Booking List</span>
+            <span>Create Job Post</span>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="text-brand text-decoration-none" to="/addReview">
             <FontAwesomeIcon icon={faAddressBook} /> <span>Add Review</span>
           </Link>
-        </li>
+        </li> */}
 
         <div>
           <li>
-            <Link to="/allBookings" className="text-brand text-decoration-none">
-              <FontAwesomeIcon icon={faCalendar} /> <span>All Bookings</span>
+            <Link to="/managePost" className="text-brand text-decoration-none">
+              <FontAwesomeIcon icon={faCalendar} /> <span>Manage Job Post</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/addService" className="text-brand text-decoration-none">
-              <FontAwesomeIcon icon={faUsers} /> <span>Add Service</span>
+              <FontAwesomeIcon icon={faUsers} /> <span>Make Role</span>
+            </Link>
+          </li> */}
+          <li>
+            <Link to="/makeRole" className="text-brand text-decoration-none">
+              <FontAwesomeIcon icon={faFileAlt} /> <span>Make Role</span>
             </Link>
           </li>
-          <li>
-            <Link to="/makeAdmin" className="text-brand text-decoration-none">
-              <FontAwesomeIcon icon={faFileAlt} /> <span>Make Admin</span>
-            </Link>
-          </li>
-          <li>
+          {/* <li>
             <Link
               to="/manageService"
               className="text-brand text-decoration-none"
             >
               <FontAwesomeIcon icon={faUserPlus} /> <span>Manage Service</span>
             </Link>
-          </li>
+          </li> */}
         </div>
         <li>
           <Link className="text-brand text-decoration-none">

@@ -22,7 +22,7 @@ const SearchBar = () => {
 
   return (
     <div>
-      <Box p={2} mt={-5} mb={2} className={classes.wrapper}>
+      <Box p={2} m={2} className={classes.wrapper}>
         <Select disableUnderline variant="filled" defaultValue="Full time">
           <MenuItem value="Full time">Full time</MenuItem>
           <MenuItem value="Part time">Part time</MenuItem>
