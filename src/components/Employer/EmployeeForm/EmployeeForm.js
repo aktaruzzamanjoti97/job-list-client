@@ -36,7 +36,7 @@ const EmployeeForm = () => {
         <Sidebar />
       </div>
       <div className="col-md-7 mt-3">
-        <h1 className="text-primary">Place Your Order</h1>
+        <h1 className="text-primary">Save Your Information to Profile</h1>
         <form className="py-4" onSubmit={handleSubmit(onSubmit)}>
           <label htmlFor="name">Name</label>
           <input
