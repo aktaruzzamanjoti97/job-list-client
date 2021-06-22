@@ -12,6 +12,7 @@ import EmployeeForm from "./components/Employer/EmployeeForm/EmployeeForm";
 import JobFeed from "./components/Pages/JobFeed/JobFeed/JobFeed";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import CreatePost from "./components/Pages/CreatePost/CreatePost";
+import Admin from "./components/Admin/Admin";
 
 export const UserContext = createContext();
 
@@ -53,8 +54,12 @@ function App() {
             <JobFeed />
           </Route>
 
-          <Route className="createPost">
+          <Route path="/createPost">
             <CreatePost />
+          </Route>
+
+          <Route path="/makeAdmin">
+            <Admin />
           </Route>
         </Switch>
       </Router>

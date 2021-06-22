@@ -73,7 +73,7 @@ const Sidebar = () => {
             </Link>
           </li> */}
           <li>
-            <Link to="/makeRole" className="text-brand text-decoration-none">
+            <Link to="/makeAdmin" className="text-brand text-decoration-none">
               <FontAwesomeIcon icon={faFileAlt} /> <span>Make Role</span>
             </Link>
           </li>
